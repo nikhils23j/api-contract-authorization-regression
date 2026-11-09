@@ -1,0 +1,26 @@
+{
+  "users": {
+    "alice": {"tenant": "alpha", "role": "member"},
+    "bob": {"tenant": "alpha", "role": "member"},
+    "erin": {"tenant": "alpha", "role": "reader"},
+    "amy": {"tenant": "alpha", "role": "admin"},
+    "carol": {"tenant": "beta", "role": "member"},
+    "dave": {"tenant": "beta", "role": "member"},
+    "mike": {"tenant": "beta", "role": "reader"},
+    "ben": {"tenant": "beta", "role": "admin"}
+  },
+  "documents": {
+    "a1": {"tenant": "alpha", "owner": "alice", "title": "Alpha design", "version": 1},
+    "a2": {"tenant": "alpha", "owner": "bob", "title": "Alpha test", "version": 1},
+    "a3": {"tenant": "alpha", "owner": "alice", "title": "Alpha release", "version": 1},
+    "b1": {"tenant": "beta", "owner": "carol", "title": "Beta design", "version": 1},
+    "b2": {"tenant": "beta", "owner": "dave", "title": "Beta test", "version": 1}
+  },
+  "response_fields": {
+    "id": "str",
+    "tenant": "str",
+    "owner": "str",
+    "title": "str",
+    "version": "int"
+  }
+}

@@ -341,8 +341,7 @@ push.
 ├── docs/
 │   ├── EVALUATION.md           method and numbers in more detail
 │   └── img/                    generated charts
-├── tests/test_lab.py           17 unit + integration tests
-└── INTERVIEW_NOTES.md          notes for explaining this project
+└── tests/test_lab.py           17 unit + integration tests
 ```
 
 ## What this isn't / limits
@@ -367,9 +366,6 @@ push.
 
 ## More
 
-- [`INTERVIEW_NOTES.md`](INTERVIEW_NOTES.md): how I'd explain this project,
-  the design trade-offs, and the questions I expect.
 - [`docs/EVALUATION.md`](docs/EVALUATION.md): the evaluation method in detail.
 
-Built as a personal project with AI pair-programming help; I've read and
-re-run everything here and the numbers above come from my own runs.
+I've read and re-run everything here, and the numbers above come from my own runs.

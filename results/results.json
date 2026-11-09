@@ -1,0 +1,2505 @@
+{
+ "environment": {
+  "date_utc": "2026-11-09T10:31:48+00:00",
+  "python": "3.10.8",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "cpu": "Apple M2",
+  "load_average_at_start": [
+   103.7646484375,
+   107.71484375,
+   72.37744140625
+  ],
+  "stdlib_only": true
+ },
+ "config": {
+  "command": "python3 run_lab.py",
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "budget": 2500,
+  "length": 25,
+  "workers": 4,
+  "enumeration_cases": 1944
+ },
+ "runtime_seconds": 103.6,
+ "clean": {
+  "enumeration": [
+   {
+    "requests": 1962,
+    "mismatches": 0,
+    "problem": []
+   },
+   {
+    "requests": 1962,
+    "mismatches": 0,
+    "problem": []
+   },
+   {
+    "requests": 1962,
+    "mismatches": 0,
+    "problem": []
+   }
+  ],
+  "baseline": {
+   "requests": 9,
+   "mismatches": 0
+  },
+  "stateful_uniform": [
+   {
+    "seed": 0,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 1,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 2,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 3,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 4,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 5,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 6,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 7,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 8,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 9,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   }
+  ],
+  "stateful_guided": [
+   {
+    "seed": 0,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 1,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 2,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 3,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 4,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 5,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 6,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 7,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 8,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   },
+   {
+    "seed": 9,
+    "requests": 2500,
+    "mismatches": 0,
+    "problem": [],
+    "failing_case": null
+   }
+  ]
+ },
+ "clean_mismatches": 0,
+ "summary": {
+  "baseline": {
+   "caught": 4,
+   "total": 30
+  },
+  "enumeration": {
+   "caught": 24,
+   "total": 30
+  },
+  "stateful_uniform": {
+   "caught": 28,
+   "total": 30,
+   "per_seed": [
+    25,
+    26,
+    26,
+    26,
+    26,
+    27,
+    26,
+    26,
+    26,
+    25
+   ],
+   "per_seed_min": 25,
+   "per_seed_max": 27,
+   "per_seed_median": 26.0
+  },
+  "stateful_guided": {
+   "caught": 30,
+   "total": 30,
+   "per_seed": [
+    28,
+    28,
+    28,
+    27,
+    28,
+    29,
+    28,
+    29,
+    30,
+    27
+   ],
+   "per_seed_min": 27,
+   "per_seed_max": 30,
+   "per_seed_median": 28.0
+  },
+  "caught_by_any": 30,
+  "missed_by_enumeration_caught_by_guided": [
+   "editor-share-can-delete",
+   "editor-share-can-share",
+   "revoke-stale-index",
+   "reshare-keeps-old-role",
+   "continuation-skips-acl",
+   "cursor-not-bound"
+  ],
+  "shrink": {
+   "median_original_ops": 14.0,
+   "median_shrunk_ops": 1.0,
+   "max_shrunk_ops": 3
+  }
+ },
+ "by_class": {
+  "concurrency": {
+   "total": 3,
+   "baseline": 1,
+   "enumeration": 3,
+   "stateful_uniform": 3,
+   "stateful_guided": 3
+  },
+  "existence-leak": {
+   "total": 2,
+   "baseline": 0,
+   "enumeration": 2,
+   "stateful_uniform": 2,
+   "stateful_guided": 2
+  },
+  "mass-assignment": {
+   "total": 4,
+   "baseline": 0,
+   "enumeration": 4,
+   "stateful_uniform": 4,
+   "stateful_guided": 4
+  },
+  "nested-idor": {
+   "total": 4,
+   "baseline": 0,
+   "enumeration": 4,
+   "stateful_uniform": 4,
+   "stateful_guided": 4
+  },
+  "pagination": {
+   "total": 4,
+   "baseline": 0,
+   "enumeration": 2,
+   "stateful_uniform": 4,
+   "stateful_guided": 4
+  },
+  "role-permission": {
+   "total": 4,
+   "baseline": 0,
+   "enumeration": 2,
+   "stateful_uniform": 3,
+   "stateful_guided": 4
+  },
+  "schema": {
+   "total": 3,
+   "baseline": 3,
+   "enumeration": 3,
+   "stateful_uniform": 3,
+   "stateful_guided": 3
+  },
+  "share-lifecycle": {
+   "total": 3,
+   "baseline": 0,
+   "enumeration": 1,
+   "stateful_uniform": 2,
+   "stateful_guided": 3
+  },
+  "tenant-isolation": {
+   "total": 3,
+   "baseline": 0,
+   "enumeration": 3,
+   "stateful_uniform": 3,
+   "stateful_guided": 3
+  }
+ },
+ "mutants": [
+  {
+   "name": "admin-skips-tenant",
+   "class": "tenant-isolation",
+   "description": "admin role short-circuits read check before the tenant comparison",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 656,
+    "first_problem": "items ['d003', 'd004'], model says ['d003']"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     6,
+     7,
+     12,
+     6,
+     6,
+     3,
+     1,
+     20,
+     8,
+     8
+    ],
+    "median_requests": 6.5,
+    "min_requests": 1,
+    "max_requests": 20
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     14,
+     19,
+     4,
+     2,
+     6,
+     22,
+     1,
+     7,
+     12,
+     27
+    ],
+    "median_requests": 9.5,
+    "min_requests": 1,
+    "max_requests": 27
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 14,
+    "shrunk_ops": 1,
+    "replays": 7,
+    "ops": [
+     [
+      "list",
+      "ben",
+      3,
+      "self"
+     ]
+    ],
+    "story": [
+     "1. ben lists documents (limit=3) -> 200   <-- service disagrees with model",
+     "   items ['d001', 'd002', 'd003'], model says ['d004', 'd005']; next_cursor present=True, model says False"
+    ]
+   }
+  },
+  {
+   "name": "share-cross-tenant",
+   "class": "tenant-isolation",
+   "description": "share endpoint does not reject grantees from another tenant",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 33,
+    "first_problem": "status 200, model says 400"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     42,
+     247,
+     414,
+     85,
+     2,
+     1,
+     73,
+     11,
+     193,
+     205
+    ],
+    "median_requests": 79.0,
+    "min_requests": 1,
+    "max_requests": 414
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     3,
+     207,
+     533,
+     95,
+     51,
+     258,
+     168,
+     136,
+     48,
+     157
+    ],
+    "median_requests": 146.5,
+    "min_requests": 3,
+    "max_requests": 533
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 3,
+    "shrunk_ops": 1,
+    "replays": 5,
+    "ops": [
+     [
+      "share",
+      "amy",
+      1,
+      "ben",
+      "viewer"
+     ]
+    ],
+    "story": [
+     "1. amy shares d002 with ben as viewer -> 200   <-- service disagrees with model",
+     "   status 200, model says 400"
+    ]
+   }
+  },
+  {
+   "name": "admin-list-all-tenants",
+   "class": "tenant-isolation",
+   "description": "list endpoint returns every tenant's documents to admins",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 656,
+    "first_problem": "items ['d003', 'd004'], model says ['d003']"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     86,
+     17,
+     35,
+     61,
+     94,
+     3,
+     141,
+     41,
+     22,
+     78
+    ],
+    "median_requests": 51.0,
+    "min_requests": 3,
+    "max_requests": 141
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     14,
+     30,
+     4,
+     2,
+     91,
+     60,
+     68,
+     13,
+     12,
+     195
+    ],
+    "median_requests": 22.0,
+    "min_requests": 2,
+    "max_requests": 195
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 14,
+    "shrunk_ops": 1,
+    "replays": 7,
+    "ops": [
+     [
+      "list",
+      "ben",
+      3,
+      "self"
+     ]
+    ],
+    "story": [
+     "1. ben lists documents (limit=3) -> 200   <-- service disagrees with model",
+     "   items ['d001', 'd002', 'd003'], model says ['d004', 'd005']; next_cursor present=True, model says False"
+    ]
+   }
+  },
+  {
+   "name": "cross-tenant-403",
+   "class": "existence-leak",
+   "description": "other-tenant document answers 403 instead of 404 (confirms it exists)",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 135,
+    "first_problem": "status 403, model says 404"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     1,
+     2,
+     1,
+     6,
+     3,
+     7,
+     1,
+     3,
+     3,
+     3
+    ],
+    "median_requests": 3.0,
+    "min_requests": 1,
+    "max_requests": 7
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     38,
+     8,
+     8,
+     6,
+     6,
+     6,
+     1,
+     7,
+     4,
+     3
+    ],
+    "median_requests": 6.0,
+    "min_requests": 1,
+    "max_requests": 38
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 13,
+    "shrunk_ops": 1,
+    "replays": 7,
+    "ops": [
+     [
+      "get_comment",
+      "alice",
+      null,
+      1
+     ]
+    ],
+    "story": [
+     "1. alice GETs comment c002 via /documents/d004 -> 403   <-- service disagrees with model",
+     "   status 403, model says 404"
+    ]
+   }
+  },
+  {
+   "name": "private-403",
+   "class": "existence-leak",
+   "description": "unshared same-tenant document answers 403 instead of 404",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 51,
+    "first_problem": "status 403, model says 404"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     4,
+     5,
+     9,
+     3,
+     26,
+     9,
+     5,
+     10,
+     2,
+     4
+    ],
+    "median_requests": 5.0,
+    "min_requests": 2,
+    "max_requests": 26
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     1,
+     5,
+     7,
+     12,
+     4,
+     7,
+     38,
+     12,
+     6,
+     1
+    ],
+    "median_requests": 6.5,
+    "min_requests": 1,
+    "max_requests": 38
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 1,
+    "shrunk_ops": 1,
+    "replays": 3,
+    "ops": [
+     [
+      "comment",
+      "mike",
+      4,
+      "ok"
+     ]
+    ],
+    "story": [
+     "1. mike comments 'hi' on d005 -> 403   <-- service disagrees with model",
+     "   status 403, model says 404"
+    ]
+   }
+  },
+  {
+   "name": "viewer-cap-ignored",
+   "class": "role-permission",
+   "description": "viewer-role user with an editor share can PATCH",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 446,
+    "first_problem": "status 200, model says 403"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     384,
+     40,
+     624,
+     8,
+     15,
+     85,
+     643,
+     134,
+     59,
+     1
+    ],
+    "median_requests": 72.0,
+    "min_requests": 1,
+    "max_requests": 643
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     170,
+     13,
+     151,
+     18,
+     22,
+     230,
+     30,
+     54,
+     31,
+     53
+    ],
+    "median_requests": 42.0,
+    "min_requests": 13,
+    "max_requests": 230
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 20,
+    "shrunk_ops": 1,
+    "replays": 8,
+    "ops": [
+     [
+      "patch",
+      "erin",
+      0,
+      "current",
+      "ok"
+     ]
+    ],
+    "story": [
+     "1. erin PATCHes d001 with {'title': 'Edited'} (If-Match \"v1\") -> 200   <-- service disagrees with model",
+     "   status 200, model says 403"
+    ]
+   }
+  },
+  {
+   "name": "viewer-can-create",
+   "class": "role-permission",
+   "description": "viewer-role user can create documents",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 441,
+    "first_problem": "status 201, model says 403"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     41,
+     89,
+     14,
+     45,
+     185,
+     31,
+     10,
+     57,
+     35,
+     13
+    ],
+    "median_requests": 38.0,
+    "min_requests": 10,
+    "max_requests": 185
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     57,
+     116,
+     18,
+     5,
+     45,
+     13,
+     2,
+     191,
+     153,
+     73
+    ],
+    "median_requests": 51.0,
+    "min_requests": 2,
+    "max_requests": 191
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 7,
+    "shrunk_ops": 1,
+    "replays": 6,
+    "ops": [
+     [
+      "create",
+      "erin",
+      "ok"
+     ]
+    ],
+    "story": [
+     "1. erin creates a document with body {'title': 'Edited'} -> 201   <-- service disagrees with model",
+     "   status 201, model says 403"
+    ]
+   }
+  },
+  {
+   "name": "editor-share-can-delete",
+   "class": "role-permission",
+   "description": "delete checks write permission instead of owner/admin",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": false,
+    "requests_to_detection": null,
+    "first_problem": null
+   },
+   "stateful_uniform": {
+    "seeds_detected": 0,
+    "seeds": 10,
+    "requests_to_detection": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "median_requests": null,
+    "min_requests": null,
+    "max_requests": null
+   },
+   "stateful_guided": {
+    "seeds_detected": 2,
+    "seeds": 10,
+    "requests_to_detection": [
+     null,
+     null,
+     null,
+     null,
+     1193,
+     null,
+     null,
+     null,
+     1118,
+     null
+    ],
+    "median_requests": 1155.5,
+    "min_requests": 1118,
+    "max_requests": 1193
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 18,
+    "shrunk_ops": 2,
+    "replays": 11,
+    "ops": [
+     [
+      "share",
+      "dave",
+      4,
+      "carol",
+      "editor"
+     ],
+     [
+      "delete",
+      "carol",
+      4,
+      "current"
+     ]
+    ],
+    "story": [
+     "1. dave shares d005 with carol as editor -> 200",
+     "2. carol DELETEs d005 (If-Match \"v1\") -> 204   <-- service disagrees with model",
+     "   status 204, model says 403"
+    ]
+   }
+  },
+  {
+   "name": "editor-share-can-share",
+   "class": "role-permission",
+   "description": "share/revoke checks write permission instead of owner/admin",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": false,
+    "requests_to_detection": null,
+    "first_problem": null
+   },
+   "stateful_uniform": {
+    "seeds_detected": 2,
+    "seeds": 10,
+    "requests_to_detection": [
+     null,
+     null,
+     949,
+     2332,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "median_requests": 1640.5,
+    "min_requests": 949,
+    "max_requests": 2332
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     615,
+     1034,
+     562,
+     1350,
+     1933,
+     2491,
+     1048,
+     274,
+     1123,
+     2105
+    ],
+    "median_requests": 1085.5,
+    "min_requests": 274,
+    "max_requests": 2491
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 15,
+    "shrunk_ops": 3,
+    "replays": 41,
+    "ops": [
+     [
+      "create",
+      "carol",
+      "ok"
+     ],
+     [
+      "share",
+      "ben",
+      5,
+      "dave",
+      "editor"
+     ],
+     [
+      "share",
+      "dave",
+      5,
+      "bob",
+      "viewer"
+     ]
+    ],
+    "story": [
+     "1. carol creates a document with body {'title': 'Edited'} -> 201",
+     "2. ben shares d006 with dave as editor -> 200",
+     "3. dave shares d006 with bob as viewer -> 400   <-- service disagrees with model",
+     "   status 400, model says 403"
+    ]
+   }
+  },
+  {
+   "name": "revoke-stale-index",
+   "class": "share-lifecycle",
+   "description": "revoke updates the grant table but not the list index",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": false,
+    "requests_to_detection": null,
+    "first_problem": null
+   },
+   "stateful_uniform": {
+    "seeds_detected": 4,
+    "seeds": 10,
+    "requests_to_detection": [
+     null,
+     null,
+     null,
+     null,
+     738,
+     2324,
+     1296,
+     908,
+     null,
+     null
+    ],
+    "median_requests": 1102.0,
+    "min_requests": 738,
+    "max_requests": 2324
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     382,
+     368,
+     1313,
+     193,
+     225,
+     325,
+     570,
+     294,
+     575,
+     273
+    ],
+    "median_requests": 346.5,
+    "min_requests": 193,
+    "max_requests": 1313
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 7,
+    "shrunk_ops": 2,
+    "replays": 7,
+    "ops": [
+     [
+      "revoke",
+      "amy",
+      0,
+      "erin"
+     ],
+     [
+      "list",
+      "erin",
+      3,
+      "self"
+     ]
+    ],
+    "story": [
+     "1. amy revokes erin's share on d001 -> 204",
+     "2. erin lists documents (limit=3) -> 200   <-- service disagrees with model",
+     "   items ['d001'], model says []"
+    ]
+   }
+  },
+  {
+   "name": "reshare-keeps-old-role",
+   "class": "share-lifecycle",
+   "description": "re-sharing keeps the previous role (setdefault) but echoes the requested one",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": false,
+    "requests_to_detection": null,
+    "first_problem": null
+   },
+   "stateful_uniform": {
+    "seeds_detected": 0,
+    "seeds": 10,
+    "requests_to_detection": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "median_requests": null,
+    "min_requests": null,
+    "max_requests": null
+   },
+   "stateful_guided": {
+    "seeds_detected": 4,
+    "seeds": 10,
+    "requests_to_detection": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     1418,
+     224,
+     194,
+     1116,
+     null
+    ],
+    "median_requests": 670.0,
+    "min_requests": 194,
+    "max_requests": 1418
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 18,
+    "shrunk_ops": 2,
+    "replays": 26,
+    "ops": [
+     [
+      "share",
+      "ben",
+      3,
+      "dave",
+      "editor"
+     ],
+     [
+      "patch",
+      "dave",
+      3,
+      "current",
+      "ok"
+     ]
+    ],
+    "story": [
+     "1. ben shares d004 with dave as editor -> 200",
+     "2. dave PATCHes d004 with {'title': 'Edited'} (If-Match \"v1\") -> 403   <-- service disagrees with model",
+     "   status 403, model says 200"
+    ]
+   }
+  },
+  {
+   "name": "revoke-missing-204",
+   "class": "share-lifecycle",
+   "description": "revoking a share that does not exist answers 204 instead of 404",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 23,
+    "first_problem": "status 204, model says 404"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     40,
+     84,
+     33,
+     123,
+     167,
+     55,
+     185,
+     8,
+     81,
+     66
+    ],
+    "median_requests": 73.5,
+    "min_requests": 8,
+    "max_requests": 185
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     9,
+     32,
+     353,
+     82,
+     109,
+     39,
+     83,
+     14,
+     8,
+     54
+    ],
+    "median_requests": 46.5,
+    "min_requests": 8,
+    "max_requests": 353
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 9,
+    "shrunk_ops": 1,
+    "replays": 27,
+    "ops": [
+     [
+      "revoke",
+      "ben",
+      4,
+      "mike"
+     ]
+    ],
+    "story": [
+     "1. ben revokes mike's share on d005 -> 204   <-- service disagrees with model",
+     "   status 204, model says 404"
+    ]
+   }
+  },
+  {
+   "name": "comment-get-ignores-parent",
+   "class": "nested-idor",
+   "description": "GET comment does not check the comment belongs to the path document",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 47,
+    "first_problem": "status 200, model says 404"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     81,
+     31,
+     153,
+     2,
+     42,
+     6,
+     77,
+     109,
+     89,
+     148
+    ],
+    "median_requests": 79.0,
+    "min_requests": 2,
+    "max_requests": 153
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     23,
+     4,
+     30,
+     168,
+     26,
+     82,
+     133,
+     65,
+     28,
+     64
+    ],
+    "median_requests": 47.0,
+    "min_requests": 4,
+    "max_requests": 168
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 23,
+    "shrunk_ops": 1,
+    "replays": 8,
+    "ops": [
+     [
+      "get_comment",
+      "bob",
+      0,
+      2
+     ]
+    ],
+    "story": [
+     "1. bob GETs comment c003 via /documents/d001 -> 200   <-- service disagrees with model",
+     "   status 200, model says 404"
+    ]
+   }
+  },
+  {
+   "name": "comment-delete-ignores-parent",
+   "class": "nested-idor",
+   "description": "DELETE comment does not check the comment belongs to the path document",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 48,
+    "first_problem": "status 204, model says 404"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     213,
+     88,
+     43,
+     124,
+     52,
+     1274,
+     120,
+     70,
+     77,
+     127
+    ],
+    "median_requests": 104.0,
+    "min_requests": 43,
+    "max_requests": 1274
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     41,
+     48,
+     2,
+     72,
+     3,
+     73,
+     265,
+     11,
+     115,
+     36
+    ],
+    "median_requests": 44.5,
+    "min_requests": 2,
+    "max_requests": 265
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 16,
+    "shrunk_ops": 2,
+    "replays": 19,
+    "ops": [
+     [
+      "comment",
+      "carol",
+      3,
+      "ok"
+     ],
+     [
+      "delete_comment",
+      "bob",
+      0,
+      3
+     ]
+    ],
+    "story": [
+     "1. carol comments 'hi' on d004 -> 201",
+     "2. bob DELETEs comment c004 via /documents/d001 -> 403   <-- service disagrees with model",
+     "   status 403, model says 404"
+    ]
+   }
+  },
+  {
+   "name": "comment-list-tenant-only",
+   "class": "nested-idor",
+   "description": "comment list checks tenant only, not read access to the parent",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 61,
+    "first_problem": "status 200, model says 404"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     240,
+     117,
+     184,
+     67,
+     147,
+     551,
+     6,
+     80,
+     27,
+     5
+    ],
+    "median_requests": 98.5,
+    "min_requests": 5,
+    "max_requests": 551
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     294,
+     83,
+     226,
+     44,
+     83,
+     182,
+     63,
+     68,
+     95,
+     486
+    ],
+    "median_requests": 89.0,
+    "min_requests": 44,
+    "max_requests": 486
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 19,
+    "shrunk_ops": 1,
+    "replays": 18,
+    "ops": [
+     [
+      "comments",
+      "carol",
+      4
+     ]
+    ],
+    "story": [
+     "1. carol lists comments on d005 -> 200   <-- service disagrees with model",
+     "   status 200, model says 404"
+    ]
+   }
+  },
+  {
+   "name": "comment-delete-any-reader",
+   "class": "nested-idor",
+   "description": "any reader can delete any comment (author/owner check missing)",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 482,
+    "first_problem": "status 204, model says 403"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     57,
+     227,
+     1109,
+     296,
+     278,
+     142,
+     37,
+     217,
+     20,
+     353
+    ],
+    "median_requests": 222.0,
+    "min_requests": 20,
+    "max_requests": 1109
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     450,
+     109,
+     135,
+     212,
+     156,
+     889,
+     627,
+     517,
+     132,
+     742
+    ],
+    "median_requests": 331.0,
+    "min_requests": 109,
+    "max_requests": 889
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 25,
+    "shrunk_ops": 1,
+    "replays": 8,
+    "ops": [
+     [
+      "delete_comment",
+      "erin",
+      null,
+      0
+     ]
+    ],
+    "story": [
+     "1. erin DELETEs comment c001 via /documents/d001 -> 204   <-- service disagrees with model",
+     "   status 204, model says 403"
+    ]
+   }
+  },
+  {
+   "name": "continuation-skips-acl",
+   "class": "pagination",
+   "description": "pages after the first filter by tenant only, not per-document access",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": false,
+    "requests_to_detection": null,
+    "first_problem": null
+   },
+   "stateful_uniform": {
+    "seeds_detected": 8,
+    "seeds": 10,
+    "requests_to_detection": [
+     1973,
+     495,
+     1068,
+     1049,
+     74,
+     208,
+     null,
+     null,
+     245,
+     781
+    ],
+    "median_requests": 638.0,
+    "min_requests": 74,
+    "max_requests": 1973
+   },
+   "stateful_guided": {
+    "seeds_detected": 9,
+    "seeds": 10,
+    "requests_to_detection": [
+     1293,
+     295,
+     2146,
+     2300,
+     null,
+     1499,
+     1324,
+     425,
+     1400,
+     286
+    ],
+    "median_requests": 1324,
+    "min_requests": 286,
+    "max_requests": 2300
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 18,
+    "shrunk_ops": 2,
+    "replays": 28,
+    "ops": [
+     [
+      "list",
+      "alice",
+      1,
+      "self"
+     ],
+     [
+      "list",
+      "alice",
+      3,
+      "self"
+     ]
+    ],
+    "story": [
+     "1. alice lists documents (limit=1) -> 200",
+     "2. alice lists documents (limit=3) using their own next cursor -> 200   <-- service disagrees with model",
+     "   items ['d002', 'd003'], model says ['d003']"
+    ]
+   }
+  },
+  {
+   "name": "cursor-inclusive",
+   "class": "pagination",
+   "description": "cursor comparison is >= so the boundary item repeats",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 656,
+    "first_problem": "items ['d002', 'd003'], model says ['d003']"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     1100,
+     49,
+     245,
+     1049,
+     74,
+     208,
+     358,
+     149,
+     245,
+     781
+    ],
+    "median_requests": 245.0,
+    "min_requests": 49,
+    "max_requests": 1100
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     22,
+     64,
+     1848,
+     894,
+     1474,
+     939,
+     378,
+     546,
+     1400,
+     13
+    ],
+    "median_requests": 720.0,
+    "min_requests": 13,
+    "max_requests": 1848
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 22,
+    "shrunk_ops": 3,
+    "replays": 28,
+    "ops": [
+     [
+      "create",
+      "alice",
+      "ok"
+     ],
+     [
+      "list",
+      "alice",
+      2,
+      null
+     ],
+     [
+      "list",
+      "alice",
+      50,
+      "self"
+     ]
+    ],
+    "story": [
+     "1. alice creates a document with body {'title': 'Edited'} -> 201",
+     "2. alice lists documents (limit=2) -> 200",
+     "3. alice lists documents (limit=50) using their own next cursor -> 200   <-- service disagrees with model",
+     "   items ['d003', 'd006'], model says ['d006']"
+    ]
+   }
+  },
+  {
+   "name": "cursor-not-bound",
+   "class": "pagination",
+   "description": "cursor's embedded user is trusted instead of rejected when it differs",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": false,
+    "requests_to_detection": null,
+    "first_problem": null
+   },
+   "stateful_uniform": {
+    "seeds_detected": 5,
+    "seeds": 10,
+    "requests_to_detection": [
+     null,
+     532,
+     null,
+     null,
+     null,
+     1297,
+     275,
+     919,
+     759,
+     null
+    ],
+    "median_requests": 759,
+    "min_requests": 275,
+    "max_requests": 1297
+   },
+   "stateful_guided": {
+    "seeds_detected": 7,
+    "seeds": 10,
+    "requests_to_detection": [
+     449,
+     815,
+     646,
+     null,
+     200,
+     322,
+     null,
+     213,
+     14,
+     null
+    ],
+    "median_requests": 322,
+    "min_requests": 14,
+    "max_requests": 815
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 24,
+    "shrunk_ops": 2,
+    "replays": 27,
+    "ops": [
+     [
+      "list",
+      "dave",
+      1,
+      "self"
+     ],
+     [
+      "list",
+      "amy",
+      1,
+      "dave"
+     ]
+    ],
+    "story": [
+     "1. dave lists documents (limit=1) -> 200",
+     "2. amy lists documents (limit=1) using dave's cursor -> 200   <-- service disagrees with model",
+     "   status 200, model says 400"
+    ]
+   }
+  },
+  {
+   "name": "next-cursor-when-full",
+   "class": "pagination",
+   "description": "next_cursor is emitted whenever a page is full, even on the last page",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 1,
+    "first_problem": "next_cursor present=True, model says False"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     162,
+     17,
+     129,
+     30,
+     1,
+     3,
+     186,
+     171,
+     18,
+     104
+    ],
+    "median_requests": 67.0,
+    "min_requests": 1,
+    "max_requests": 186
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     5,
+     30,
+     14,
+     111,
+     33,
+     55,
+     69,
+     38,
+     1,
+     128
+    ],
+    "median_requests": 35.5,
+    "min_requests": 1,
+    "max_requests": 128
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 5,
+    "shrunk_ops": 1,
+    "replays": 6,
+    "ops": [
+     [
+      "list",
+      "erin",
+      1,
+      null
+     ]
+    ],
+    "story": [
+     "1. erin lists documents (limit=1) -> 200   <-- service disagrees with model",
+     "   next_cursor present=True, model says False"
+    ]
+   }
+  },
+  {
+   "name": "create-accepts-owner",
+   "class": "mass-assignment",
+   "description": "create honours a client-supplied owner field",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 6,
+    "first_problem": "status 201, model says 400"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     724,
+     484,
+     67,
+     89,
+     283,
+     628,
+     145,
+     129,
+     51,
+     888
+    ],
+    "median_requests": 214.0,
+    "min_requests": 51,
+    "max_requests": 888
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     156,
+     322,
+     161,
+     163,
+     78,
+     290,
+     52,
+     402,
+     606,
+     30
+    ],
+    "median_requests": 162.0,
+    "min_requests": 30,
+    "max_requests": 606
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 6,
+    "shrunk_ops": 1,
+    "replays": 6,
+    "ops": [
+     [
+      "create",
+      "amy",
+      "extra_owner"
+     ]
+    ],
+    "story": [
+     "1. amy creates a document with body {'title': 'Edited', 'owner': 'ben'} -> 201   <-- service disagrees with model",
+     "   status 201, model says 400"
+    ]
+   }
+  },
+  {
+   "name": "create-accepts-tenant",
+   "class": "mass-assignment",
+   "description": "create honours a client-supplied tenant field",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 7,
+    "first_problem": "status 201, model says 400"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     106,
+     150,
+     356,
+     525,
+     1993,
+     566,
+     20,
+     315,
+     431,
+     532
+    ],
+    "median_requests": 393.5,
+    "min_requests": 20,
+    "max_requests": 1993
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     238,
+     17,
+     136,
+     461,
+     14,
+     618,
+     134,
+     75,
+     540,
+     86
+    ],
+    "median_requests": 135.0,
+    "min_requests": 14,
+    "max_requests": 618
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 13,
+    "shrunk_ops": 1,
+    "replays": 7,
+    "ops": [
+     [
+      "create",
+      "bob",
+      "extra_tenant"
+     ]
+    ],
+    "story": [
+     "1. bob creates a document with body {'title': 'Edited', 'tenant': 'beta'} -> 201   <-- service disagrees with model",
+     "   status 201, model says 400"
+    ]
+   }
+  },
+  {
+   "name": "patch-accepts-owner",
+   "class": "mass-assignment",
+   "description": "PATCH honours a client-supplied owner field (ownership takeover)",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 13,
+    "first_problem": "status 200, model says 400"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     36,
+     367,
+     119,
+     1842,
+     250,
+     1248,
+     209,
+     1529,
+     96,
+     403
+    ],
+    "median_requests": 308.5,
+    "min_requests": 36,
+    "max_requests": 1842
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     375,
+     82,
+     137,
+     161,
+     61,
+     183,
+     19,
+     93,
+     47,
+     41
+    ],
+    "median_requests": 87.5,
+    "min_requests": 19,
+    "max_requests": 375
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 25,
+    "shrunk_ops": 1,
+    "replays": 8,
+    "ops": [
+     [
+      "patch",
+      "ben",
+      3,
+      "current",
+      "extra_owner"
+     ]
+    ],
+    "story": [
+     "1. ben PATCHes d004 with {'title': 'Edited', 'owner': 'alice'} (If-Match \"v1\") -> 200   <-- service disagrees with model",
+     "   status 200, model says 400"
+    ]
+   }
+  },
+  {
+   "name": "patch-accepts-version",
+   "class": "mass-assignment",
+   "description": "PATCH honours a client-supplied version field",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 14,
+    "first_problem": "status 200, model says 400"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     338,
+     929,
+     1182,
+     700,
+     1222,
+     138,
+     135,
+     126,
+     439,
+     305
+    ],
+    "median_requests": 388.5,
+    "min_requests": 126,
+    "max_requests": 1222
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     90,
+     296,
+     39,
+     268,
+     123,
+     29,
+     211,
+     20,
+     2,
+     244
+    ],
+    "median_requests": 106.5,
+    "min_requests": 2,
+    "max_requests": 296
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 15,
+    "shrunk_ops": 1,
+    "replays": 7,
+    "ops": [
+     [
+      "patch",
+      "dave",
+      4,
+      "current",
+      "extra_version"
+     ]
+    ],
+    "story": [
+     "1. dave PATCHes d005 with {'title': 'Edited', 'version': 99} (If-Match \"v1\") -> 200   <-- service disagrees with model",
+     "   status 200, model says 400"
+    ]
+   }
+  },
+  {
+   "name": "patch-if-match-optional",
+   "class": "concurrency",
+   "description": "PATCH without If-Match is accepted",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 12,
+    "first_problem": "status 200, model says 428"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     1163,
+     958,
+     87,
+     730,
+     562,
+     171,
+     110,
+     141,
+     172,
+     332
+    ],
+    "median_requests": 252.0,
+    "min_requests": 87,
+    "max_requests": 1163
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     368,
+     115,
+     108,
+     21,
+     121,
+     65,
+     9,
+     48,
+     57,
+     132
+    ],
+    "median_requests": 86.5,
+    "min_requests": 9,
+    "max_requests": 368
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 18,
+    "shrunk_ops": 1,
+    "replays": 16,
+    "ops": [
+     [
+      "patch",
+      "ben",
+      3,
+      "missing",
+      "ok"
+     ]
+    ],
+    "story": [
+     "1. ben PATCHes d004 with {'title': 'Edited'} (If-Match missing) -> 200   <-- service disagrees with model",
+     "   status 200, model says 428"
+    ]
+   }
+  },
+  {
+   "name": "delete-ignores-stale-etag",
+   "class": "concurrency",
+   "description": "DELETE with a stale If-Match is accepted",
+   "baseline": {
+    "detected": false,
+    "requests_to_detection": null
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 17,
+    "first_problem": "status 204, model says 412"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     83,
+     628,
+     592,
+     138,
+     1132,
+     147,
+     184,
+     65,
+     233,
+     118
+    ],
+    "median_requests": 165.5,
+    "min_requests": 65,
+    "max_requests": 1132
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     386,
+     16,
+     219,
+     83,
+     149,
+     702,
+     7,
+     15,
+     140,
+     365
+    ],
+    "median_requests": 144.5,
+    "min_requests": 7,
+    "max_requests": 702
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 11,
+    "shrunk_ops": 1,
+    "replays": 7,
+    "ops": [
+     [
+      "delete",
+      "alice",
+      0,
+      "stale"
+     ]
+    ],
+    "story": [
+     "1. alice DELETEs d001 (If-Match \"v0\") -> 204   <-- service disagrees with model",
+     "   status 204, model says 412"
+    ]
+   }
+  },
+  {
+   "name": "patch-no-version-bump",
+   "class": "concurrency",
+   "description": "PATCH does not increment version, so the ETag never changes",
+   "baseline": {
+    "detected": true,
+    "requests_to_detection": 3
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 10,
+    "first_problem": "body {'id': 'd001', 'owner': 'alice', 'tenant': 'alpha', 'title': 'Edited', 'version': 1}, model says {'id': 'd001', 'tenant': 'alpha', 'owner': 'alice', 'title': 'Edited', 'version': 2}"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     49,
+     70,
+     31,
+     152,
+     76,
+     88,
+     23,
+     21,
+     199,
+     128
+    ],
+    "median_requests": 73.0,
+    "min_requests": 21,
+    "max_requests": 199
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     10,
+     49,
+     10,
+     4,
+     85,
+     70,
+     10,
+     8,
+     10,
+     9
+    ],
+    "median_requests": 10.0,
+    "min_requests": 4,
+    "max_requests": 85
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 10,
+    "shrunk_ops": 1,
+    "replays": 7,
+    "ops": [
+     [
+      "patch",
+      "alice",
+      0,
+      "current",
+      "ok"
+     ]
+    ],
+    "story": [
+     "1. alice PATCHes d001 with {'title': 'Edited'} (If-Match \"v1\") -> 200   <-- service disagrees with model",
+     "   body {'id': 'd001', 'owner': 'alice', 'tenant': 'alpha', 'title': 'Edited', 'version': 1}, model says {'id': 'd001', 'tenant': 'alpha', 'owner': 'alice', 'title': 'Edited', 'version': 2}; ETag '\"v1\"', model says '\"v2\"'"
+    ]
+   }
+  },
+  {
+   "name": "doc-leaks-shares",
+   "class": "schema",
+   "description": "document responses include the internal share table",
+   "baseline": {
+    "detected": true,
+    "requests_to_detection": 1
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 1,
+    "first_problem": "list item violates document schema"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     5,
+     1,
+     3,
+     1,
+     1,
+     3,
+     9,
+     1,
+     1,
+     2
+    ],
+    "median_requests": 1.5,
+    "min_requests": 1,
+    "max_requests": 9
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     2,
+     1,
+     4,
+     1,
+     1,
+     4,
+     10,
+     1,
+     1,
+     4
+    ],
+    "median_requests": 1.5,
+    "min_requests": 1,
+    "max_requests": 10
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 2,
+    "shrunk_ops": 1,
+    "replays": 4,
+    "ops": [
+     [
+      "create",
+      "alice",
+      "ok"
+     ]
+    ],
+    "story": [
+     "1. alice creates a document with body {'title': 'Edited'} -> 201   <-- service disagrees with model",
+     "   body violates document schema; body {'id': 'd006', 'owner': 'alice', 'shares': {}, 'tenant': 'alpha', 'title': 'Edited', 'version': 1}, model says {'id': 'd006', 'tenant': 'alpha', 'owner': 'alice', 'title': 'Edited', 'version': 1}"
+    ]
+   }
+  },
+  {
+   "name": "comment-missing-document-id",
+   "class": "schema",
+   "description": "comment responses omit document_id",
+   "baseline": {
+    "detected": true,
+    "requests_to_detection": 5
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 19,
+    "first_problem": "comment item violates comment schema"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     7,
+     9,
+     15,
+     18,
+     10,
+     4,
+     27,
+     2,
+     60,
+     6
+    ],
+    "median_requests": 9.5,
+    "min_requests": 2,
+    "max_requests": 60
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     8,
+     21,
+     28,
+     19,
+     9,
+     14,
+     3,
+     16,
+     13,
+     21
+    ],
+    "median_requests": 15.0,
+    "min_requests": 3,
+    "max_requests": 28
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 8,
+    "shrunk_ops": 1,
+    "replays": 12,
+    "ops": [
+     [
+      "comment",
+      "amy",
+      0,
+      "ok"
+     ]
+    ],
+    "story": [
+     "1. amy comments 'hi' on d001 -> 201   <-- service disagrees with model",
+     "   body violates comment schema; body {'author': 'amy', 'id': 'c004', 'text': 'hi'}, model says {'id': 'c004', 'document_id': 'd001', 'author': 'amy', 'text': 'hi'}"
+    ]
+   }
+  },
+  {
+   "name": "version-as-string",
+   "class": "schema",
+   "description": "version is serialised as a string",
+   "baseline": {
+    "detected": true,
+    "requests_to_detection": 1
+   },
+   "enumeration": {
+    "detected": true,
+    "requests_to_detection": 1,
+    "first_problem": "list item violates document schema"
+   },
+   "stateful_uniform": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     5,
+     1,
+     3,
+     1,
+     1,
+     3,
+     9,
+     1,
+     1,
+     2
+    ],
+    "median_requests": 1.5,
+    "min_requests": 1,
+    "max_requests": 9
+   },
+   "stateful_guided": {
+    "seeds_detected": 10,
+    "seeds": 10,
+    "requests_to_detection": [
+     2,
+     1,
+     4,
+     1,
+     1,
+     4,
+     10,
+     1,
+     1,
+     4
+    ],
+    "median_requests": 1.5,
+    "min_requests": 1,
+    "max_requests": 10
+   },
+   "shrink": {
+    "from": "stateful",
+    "original_ops": 2,
+    "shrunk_ops": 1,
+    "replays": 4,
+    "ops": [
+     [
+      "create",
+      "alice",
+      "ok"
+     ]
+    ],
+    "story": [
+     "1. alice creates a document with body {'title': 'Edited'} -> 201   <-- service disagrees with model",
+     "   body violates document schema; body {'id': 'd006', 'owner': 'alice', 'tenant': 'alpha', 'title': 'Edited', 'version': '1'}, model says {'id': 'd006', 'tenant': 'alpha', 'owner': 'alice', 'title': 'Edited', 'version': 1}"
+    ]
+   }
+  }
+ ]
+}

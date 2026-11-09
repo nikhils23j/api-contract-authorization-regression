@@ -1,8 +1,9 @@
+"""Fixture loading and schema checks (independent of both service and model)."""
 import json
 from pathlib import Path
 
-
 CONTRACT = Path(__file__).resolve().parents[2] / "contracts" / "documents.json"
+_KINDS = {"str": str, "int": int}
 
 
 def load_contract():
@@ -10,33 +11,27 @@ def load_contract():
         return json.load(handle)
 
 
-def expected_status(contract, user, document_id, method):
-    """Independent oracle derived from the declarative contract."""
-    if user is None:
-        return 401
-    principal = contract["users"][user]
-    document = contract["documents"][document_id]
-    if principal["tenant"] != document["tenant"]:
-        return 404
-    if method == "GET":
-        return 200
-    if principal["role"] == "admin" or document["owner"] == user:
-        return 200 if method == "PATCH" else 204
-    return 403
-
-
-def expected_list_ids(contract, user):
-    tenant = contract["users"][user]["tenant"]
-    return sorted(
-        doc_id
-        for doc_id, document in contract["documents"].items()
-        if document["tenant"] == tenant
-    )
-
-
-def validate_document(contract, payload):
-    fields = contract["response_fields"]
+def matches_schema(contract, name, payload):
+    fields = contract["schemas"][name]
     if not isinstance(payload, dict) or set(payload) != set(fields):
         return False
-    kinds = {"str": str, "int": int}
-    return all(type(payload[name]) is kinds[kind] for name, kind in fields.items())
+    return all(type(payload[key]) is _KINDS[kind] for key, kind in fields.items())
+
+
+def schema_problems(contract, kind, payload):
+    """Return a list of schema problems for a successful response body of `kind`."""
+    if kind is None:
+        return [] if payload is None else ["expected empty body"]
+    if kind == "list":
+        if not isinstance(payload, dict) or set(payload) != {"items", "next_cursor"}:
+            return ["list body must have exactly items/next_cursor"]
+        if payload["next_cursor"] is not None and not isinstance(payload["next_cursor"], str):
+            return ["next_cursor must be str or null"]
+        bad = [item for item in payload["items"] if not matches_schema(contract, "document", item)]
+        return ["list item violates document schema"] if bad else []
+    if kind == "comment_list":
+        if not isinstance(payload, dict) or set(payload) != {"items"}:
+            return ["comment list must have exactly items"]
+        bad = [item for item in payload["items"] if not matches_schema(contract, "comment", item)]
+        return ["comment item violates comment schema"] if bad else []
+    return [] if matches_schema(contract, kind, payload) else [f"body violates {kind} schema"]

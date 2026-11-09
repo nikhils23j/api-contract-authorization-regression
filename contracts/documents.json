@@ -1,26 +1,34 @@
 {
   "users": {
-    "alice": {"tenant": "alpha", "role": "member"},
-    "bob": {"tenant": "alpha", "role": "member"},
-    "erin": {"tenant": "alpha", "role": "reader"},
-    "amy": {"tenant": "alpha", "role": "admin"},
-    "carol": {"tenant": "beta", "role": "member"},
-    "dave": {"tenant": "beta", "role": "member"},
-    "mike": {"tenant": "beta", "role": "reader"},
-    "ben": {"tenant": "beta", "role": "admin"}
+    "alice": {"tenant": "alpha", "role": "editor"},
+    "bob":   {"tenant": "alpha", "role": "editor"},
+    "erin":  {"tenant": "alpha", "role": "viewer"},
+    "amy":   {"tenant": "alpha", "role": "admin"},
+    "carol": {"tenant": "beta",  "role": "editor"},
+    "dave":  {"tenant": "beta",  "role": "editor"},
+    "mike":  {"tenant": "beta",  "role": "viewer"},
+    "ben":   {"tenant": "beta",  "role": "admin"}
   },
   "documents": {
-    "a1": {"tenant": "alpha", "owner": "alice", "title": "Alpha design", "version": 1},
-    "a2": {"tenant": "alpha", "owner": "bob", "title": "Alpha test", "version": 1},
-    "a3": {"tenant": "alpha", "owner": "alice", "title": "Alpha release", "version": 1},
-    "b1": {"tenant": "beta", "owner": "carol", "title": "Beta design", "version": 1},
-    "b2": {"tenant": "beta", "owner": "dave", "title": "Beta test", "version": 1}
+    "d001": {"tenant": "alpha", "owner": "alice", "title": "Alpha design",    "version": 1},
+    "d002": {"tenant": "alpha", "owner": "bob",   "title": "Alpha test plan", "version": 1},
+    "d003": {"tenant": "alpha", "owner": "alice", "title": "Alpha release",   "version": 1},
+    "d004": {"tenant": "beta",  "owner": "carol", "title": "Beta design",     "version": 1},
+    "d005": {"tenant": "beta",  "owner": "dave",  "title": "Beta test plan",  "version": 1}
   },
-  "response_fields": {
-    "id": "str",
-    "tenant": "str",
-    "owner": "str",
-    "title": "str",
-    "version": "int"
+  "shares": {
+    "d001": {"bob": "viewer", "erin": "editor"},
+    "d004": {"dave": "viewer", "mike": "editor"}
+  },
+  "comments": {
+    "c001": {"document_id": "d001", "author": "bob",  "text": "Looks good"},
+    "c002": {"document_id": "d004", "author": "dave", "text": "Needs a diagram"},
+    "c003": {"document_id": "d002", "author": "bob",  "text": "Draft"}
+  },
+  "schemas": {
+    "document": {"id": "str", "tenant": "str", "owner": "str", "title": "str", "version": "int"},
+    "comment":  {"id": "str", "document_id": "str", "author": "str", "text": "str"},
+    "share":    {"document_id": "str", "user": "str", "role": "str"},
+    "error":    {"error": "str"}
   }
 }
